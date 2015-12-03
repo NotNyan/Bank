@@ -10,11 +10,11 @@ import java.util.Random;
 import java.util.regex.Pattern;
 
 public class Bank {
-	final String name;
+	private final String name;
 	private int Pin;
 	private double USD;
 	private boolean Unlocked = false;
-	private File file = new File("/users/hank/test.txt");
+	private File file = new File("test.txt");
 	private Deposit deposit;
 
 	public Bank(String name) {
@@ -80,6 +80,11 @@ public class Bank {
 	
 	private void setPin(int pin) {
 		Pin = pin;
+	}
+	public boolean isUnlocked() {
+		if(Unlocked)
+			return true;
+		return false;
 	}
 	
 	public void gainAccess(int PinNum) {

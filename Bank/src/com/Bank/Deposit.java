@@ -6,6 +6,7 @@ public class Deposit extends Bank{
 		super(name);
 	}
 	
-	public void addMoney(boolean Unlocked) {
+	public void addMoney() {
+		if ()
 	}
 }
