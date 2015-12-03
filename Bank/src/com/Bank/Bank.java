@@ -15,6 +15,7 @@ public class Bank {
 	private double USD;
 	private boolean Unlocked = false;
 	private File file = new File("/users/hank/test.txt");
+	private Deposit deposit;
 
 	public Bank(String name) {
 		this.name = name;
